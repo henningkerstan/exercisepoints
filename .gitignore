@@ -218,4 +218,6 @@ TSWLatexianTemp*
 
 # expex forward references with \gathertags
 *-tags.tex
-hkexercise.pdf
+
+# documentation pdf
+exercisepoints.pdf
