@@ -221,3 +221,8 @@ TSWLatexianTemp*
 
 # documentation pdf
 exercisepoints.pdf
+exercisepoints_v1.2.3.zip
+
+# all /out/ folders
+*/out/*
+examples/exercisepoints.sty
