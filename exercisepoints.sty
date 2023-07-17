@@ -24,7 +24,7 @@
 % package identification
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{exercisepoints}[%
-  2019/01/03 v1.2.3 %
+  2023/07/17 v1.2.4 %
   count exercises and points%
 ]
 
@@ -102,8 +102,16 @@
   \theexercisepoints@exercisecount%
 }
 
+\providecommand{\currentexercisenumberoffset}[1]{%
+  \the\numexpr\value{exercisepoints@exercisecount}+#1\relax%
+}
+
 \providecommand{\currentsubexercisenumber}{%
   \theexercisepoints@subexercisecount%
+}
+
+\providecommand{\currentsubexercisenumberoffset}[1]{%
+  \the\numexpr\value{exercisepoints@subexercisecount}+#1\relax%
 }
 
 
@@ -141,9 +149,9 @@
   \AtBeginExercise{%
     ~\smallskip\\\sffamily%
     \ifthenelse{\equal{\currentexercisetitle}{}}%
-      {\textbf{Exercise~\currentexercisenumber}} % empty title
+      {\textbf{Exercise~\currentexercisenumberoffset{1}}} % empty title
       {%
-        \textbf{Exercise~\currentexercisenumber:} %
+        \textbf{Exercise~\currentexercisenumberoffset{1}:} %
     \currentexercisetitle%
       }% non-empty title
     \,~\hfill\textbf{(\currentexercisepoints~Points)}%
@@ -154,9 +162,9 @@
   \AtBeginSubexercise{%
     ~\smallskip\\\sffamily%
     \ifthenelse{\equal{\currentsubexercisetitle}{}}%
-      {\emph{Exercise~\currentexercisenumber.\currentsubexercisenumber}} % empty title
+      {\emph{Exercise~\currentexercisenumber.\currentsubexercisenumberoffset{1}}} % empty title
       {%
-        \emph{Exercise~\currentexercisenumber.\currentsubexercisenumber:} %
+        \emph{Exercise~\currentexercisenumber.\currentsubexercisenumberoffset{1}:} %
     \emph{\currentsubexercisetitle}%
       }% non-empty title
     \,~\hfill\emph{(\currentsubexercisepoints~Points)}%

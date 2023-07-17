@@ -221,3 +221,6 @@ TSWLatexianTemp*
 
 # documentation pdf
 exercisepoints.pdf
+
+# DS_Store
+.DS_Store

@@ -24,6 +24,7 @@ Now you can typeset your first exercise using the following code.
 For further information please read the package documentation in ‘exercisepoints.pdf’ (you can either obtain this file from the GitHub releases page or simply compile the file ‘exercisepoints.tex’ twice with pdflatex).
 
 ## Version History
+- *2023/07/17 v1.2.4* Provide commands ```\currentexercisenumberoffset{...}``` and ```\currentsubexercisenumberoffset{...}```
 - *2019/01/03 v1.2.3* Revised README.md
 - *2019/01/02 v1.2.2* Revised documentation
 - *2018/08/15 v1.2.1* Renamed the package from *hkexercise* to *exercisepoints* to comply with CTAN rules (see [CTAN](https://ctan.org/file/help/ctan/CTAN-upload-addendum))
