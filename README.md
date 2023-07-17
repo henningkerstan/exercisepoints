@@ -34,7 +34,7 @@ For further information please read the package documentation in ‘exercisepoin
 - *2017/06/26 v1.0* The initial version of this package is published on GitHub.
 
 ## Copyright and License
-Copyright © 2017-2019 Henning Kerstan.
+Copyright © 2017-2023 Henning Kerstan.
 
 This work may be distributed and/or modified under the conditions of the LaTeX Project Public License, either version 1.3 of this license or (at your option) any later version. The latest version of this license is in
 
